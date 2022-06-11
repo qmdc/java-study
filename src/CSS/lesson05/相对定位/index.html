@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>相对定位</title>
+    <style>
+        #set1{
+            width: 260px;
+            height: 260px;
+            border: 1px solid red;
+        }
+        a:nth-of-type(1){
+            margin: 10px;
+            background: #8e42e0;
+            width: 80px;
+            height: 80px;
+            display: inline-block;
+            line-height: 80px;
+            text-align: center;
+            text-decoration: none;
+        }
+        a:nth-of-type(1):hover{
+            background: #4245ff;
+        }
+        a:nth-of-type(2){
+            margin: 10px;
+            background: #8e42e0;
+            width: 80px;
+            height: 80px;
+            display: inline-block;
+            line-height: 80px;
+            text-align: center;
+            text-decoration: none;
+            position: relative;
+            right: -55px;
+        }
+        a:nth-of-type(2):hover{
+            background: #4245ff;
+        }
+        a:nth-of-type(3){
+            margin: 10px;
+            background: #8e42e0;
+            width: 80px;
+            height: 80px;
+            display: inline-block;
+            line-height: 80px;
+            text-align: center;
+            text-decoration: none;
+            position: relative;
+            bottom: -60px;
+        }
+        a:nth-of-type(3):hover{
+            background: #4245ff;
+        }
+        a:nth-of-type(4){
+            margin: 10px;
+            background: #8e42e0;
+            width: 80px;
+            height: 80px;
+            display: inline-block;
+            line-height: 80px;
+            text-align: center;
+            text-decoration: none;
+            position:relative;
+            right: -55px;
+            bottom: -60px;
+        }
+        a:nth-of-type(4):hover{
+            background: #4245ff;
+        }
+        a:nth-of-type(5){
+            margin: 10px;
+            background: #ec298b;
+            width: 80px;
+            height: 80px;
+            display: inline-block;
+            line-height: 80px;
+            text-align: center;
+            text-decoration: none;
+            position: relative;
+            right: -80px;
+            top: -120px;
+        }
+        a:nth-of-type(5):hover{
+            background: #4245ff;
+        }
+    </style>
+</head>
+<body>
+<div id="set1">
+  <a href="https://www.taobao.com">链接1</a>
+  <a href="#">链接2</a>
+  <a href="#">链接3</a>
+  <a href="#">链接4</a>
+  <a href="#">链接5</a>
+</div>
+</body>
+</html>

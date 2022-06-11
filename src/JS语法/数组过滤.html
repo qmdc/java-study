@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+</head>
+<body>
+<select name="" id="">
+  <option value="0">请选择销量范围</option>
+  <option value="1">&lt100</option>
+  <option value="2">100~500</option>
+  <option value="3">&gt500</option>
+</select>
+<ul>
+  <li>牛客logo马克杯</li>
+  <li>无盖星空杯</li>
+  <li>老式茶杯</li>
+  <li>欧式印花杯</li>
+</ul>
+
+<script>
+  var cups = [
+    { type: 1, price: 100, color: 'black', sales: 60, name: '牛客logo马克杯' },
+    { type: 2, price: 40, color: 'blue', sales: 100, name: '无盖星空杯' },
+    { type: 4, price: 60, color: 'green', sales: 200, name: '老式茶杯' },
+    { type: 3, price: 50, color: 'green', sales: 600, name: '欧式印花杯' }
+  ]
+  var select = document.querySelector('select');
+  var ul = document.querySelector('ul');
+  // 补全代码
+  select.onchange=function (){
+    while (ul.firstChild) {ul.removeChild(ul.firstChild);}  //清空ul列表
+    if(select.value==='0'){var arr_=cups.filter(cup=>{return cup.sales;})}  //filter方法会返回一个满足条件的新数组集合
+    if(select.value==='1'){var arr_=cups.filter(cup=>{return cup.sales<100;})}
+    if(select.value==='2'){var arr_=cups.filter(cup=>{return cup.sales<=500&&cup.sales>=100;})}
+    if(select.value==='3'){var arr_=cups.filter(cup=>{return cup.sales>500;})}
+    print_(arr_);
+  }
+
+  function print_(arr_){
+    arr_.forEach(arr__=>{
+      let li_ = document.createElement('li');
+      li_.innerHTML=arr__.name;
+      ul.appendChild(li_);
+    })
+  }
+
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+

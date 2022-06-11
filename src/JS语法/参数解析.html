@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+<!--    getParams('https://nowcoder.com/online?id=1&salas=1000')-->
+</head>
+<body>
+<script>
+    const _getParams = (url) => {
+        // 补全代码
+        let arr=url.split('?')[1].split('&');
+        let obj={};
+        arr.forEach(arr=>{
+            let arr0=arr.split('=');
+            obj.arr0[0]=arr0[1];
+        })
+        return obj;
+    }
+</script>
+</body>
+</html>

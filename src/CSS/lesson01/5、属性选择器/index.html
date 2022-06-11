@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .demo a{
+            float:left;
+            display:block;
+            height: 50px;
+            width:50px;
+            background: #e5da91;
+            border-radius: 10px;
+            text-align:center;
+            color: #bd4242;
+            text-decoration:none;
+            margin-right: 5px;
+            font:bold 20px/50px Arial;
+        }
+
+        /*存在id属性的元素*/
+        a[id]{
+            background: black;
+        }
+
+        /*id=last的元素*/
+        a[id=last]{
+            background: #19ff0b;
+        }
+
+        /*class中有first的元素*/
+        a[class*="first"]{
+            background: #2948ff;
+        }
+
+        /*选中href中以https1开头的元素*/
+        a[href^=https1]{
+            background: #cdffc5;
+        }
+
+        /*选中以指定字符结尾的标签*/
+        a[href$=notes\/]{
+            background: #24c7ff;
+        }
+    </style>
+</head>
+<body>
+
+<p class="demo">
+
+    <a href="http://www.baidu.com" class="links item first">1</a>
+    <a href="http://blog.kuangstudy.com" class="links item active">2</a>
+    <a href="https://oddfar.github.io/notes/" class="item">3</a>
+    <a href="https1://notre1024.lofter.com" class="links">4</a>
+    <a href="https://www.kuangstudy.com" class="links item first" target="_blank">5</a>
+    <a href="https://www.runoob.com/java/java-tutorial.html" class="links item">6</a>
+    <a href="https://www.bilibili.com/read/cv5702420" class="links item">7</a>
+    <a href="https://gitee.com" class="links item" id="last">8</a>
+
+</p>
+
+</body>
+</html>

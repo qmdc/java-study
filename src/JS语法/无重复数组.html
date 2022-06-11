@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+</head>
+<body>
+
+<script>
+  const _getUniqueNums = (start,end,n) => {
+    // 补全代码
+    var arr=[];
+    for(let i=0;i<n;){
+      let num=Math.random()*(end-start)+start;
+      if(!arr.includes(num)){
+        arr.push(num);
+        i++;
+      }
+    }
+    return arr;
+  }
+</script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+#box{
+    border: 2px solid red;
+    /*超出部分  overflow:   scroll滚动条   hidden隐藏*/
+    /*overflow: hidden;*/
+}
+
+/*伪类*/
+#box:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+div{
+    border: 2px solid red;
+}
+
+div:nth-of-type(1){
+    display: inline-block;
+    float: left;
+}
+
+div:nth-of-type(2){
+    display: inline-block;
+    float: left;
+    height: 500px;
+}
+
+div:nth-of-type(3){
+    display: inline-block;
+    float: left;
+}
+
+p{
+    display: inline-block;
+    border: 2px solid red;
+    float: left;
+    /*
+      clear : right;   右侧不允许有浮动元素
+      clear : left;    左侧不允许有浮动元素
+      clear : both;    两侧不允许有浮动元素
+      clear : none;
+    */
+    /*clear: none;*/
+}
+/*.clear{
+  clear: both;
+  margin: 0;
+  padding: 0;
+}*/

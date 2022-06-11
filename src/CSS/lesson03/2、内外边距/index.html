@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>盒子模型的边距问题</title>
+    <style>
+        body{
+            /*习惯的一些操作(设为零0)*/
+            margin:20px;
+            padding: 0;
+            text-decoration: none;
+        }
+        #box{
+            width: 300px;
+            /*border(设置边框) : 粗细 样式 颜色;*/
+            border: 1px solid red;
+            /*外边距的妙用：居中元素*/
+            margin: 0 auto;
+            /*内边距设置*/
+            padding: 3px 4px;
+        }
+
+        h3{
+            font-size: 16px;
+            background-color: #f19f4d;
+            line-height: 30px;
+            color:white;
+            margin: 10px 0;
+        }
+
+        form{
+            background: #a6cb93;
+        }
+        p:nth-of-type(1){
+            border: 3px solid red;
+            margin: 2px 3px 4px 5px;
+            padding: 10px 2px;
+        }
+
+    </style>
+</head>
+<body>
+<div id="box">
+    <form action="#" method="post">
+        <div><h3>京东会员</h3></div>
+        <div class="set1">
+            <p>用户名:<input type="text" placeholder="邮箱/用户名/已验证手机" size="30"></p>
+            <p>密&nbsp&nbsp码：<input type="password" size="30"></p>
+            <p><input type="submit" value="登陆"></p>
+        </div>
+
+    </form>
+</div>
+
+</body>
+</html>

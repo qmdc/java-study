@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--MD5工具类-->
+    <script src="MD5加密.js"></script>
+</head>
+<body>
+<form action="#" method="get">
+    <p>用户名：<input type="text" placeholder="请输入用户名" id="user"></p>
+    <p>密&nbsp&nbsp&nbsp&nbsp码：<input type="password" placeholder="请输入密码" id="psw"></p>
+    <!--绑定事件onclick被点击-->
+    <button type="submit" onclick="konan()">提交</button>
+</form>
+<script>
+    function konan(){
+        let user_id=document.getElementById('user');
+        let psw_id=document.getElementById('psw');
+        //md5算法
+        psw_id.value=MD5(psw_id.value);
+        alert("提交成功！");
+    }
+</script>
+</body>
+</html>

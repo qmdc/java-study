@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+    <title>固定定位</title>
+<style>
+  div.fixed {
+    /*position: fixed; 的元素是相对于视口定位的，这意味着即使滚动页面，它也始终位于同一位置。
+     top、right、bottom 和 left 属性用于定位此元素。*/
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 300px;
+    border: 3px solid #73AD21;
+  }
+</style>
+
+</head>
+
+<body>
+<h1>position: fixed;</h1>
+<p>设置 position: fixed; 的元素会相对视口定位，这意味着即使页面滚动也会停留在某个位置：</p>
+<div class="fixed">
+  这个 div 元素设置 position: fixed;
+</div>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset=utf-8>
+</head>
+<body>
+
+<script type="text/javascript">
+  function _comma(number) {
+    // 补全代码
+    var e=number<0?'-':'';
+    var arr=number.toString().split("");  //以""作为分隔符返回数组
+    if(number<0){
+      arr=arr.slice(1); //返回从1开始的元素(start,end可选)
+    }
+    var n=3;
+    var a=0;
+    arr.reverse();    //反转
+    for(let i=0;i<arr.length;i++){
+      a++;
+      if(a===n&&i<arr.length-1){
+        arr.splice(i+1,0,',');  //(开始下标,要删除的元素个数,要添加的元素,要添加的元素,~~~)
+        a=0;
+        n++;
+      }
+    }
+    return e+arr.reverse().join('');  //返回以""作为连接的字符串
+  }
+</script>
+</body>
+</html>

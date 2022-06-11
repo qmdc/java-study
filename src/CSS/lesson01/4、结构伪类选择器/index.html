@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style> 
+        /*ul的第一个子元素*/
+        ul li:first-child{
+            background: #ff8532;
+        }
+
+        /*ul的最后一个子元素*/
+        ul li:last-child{
+            background: #4aff22;
+        }
+
+        /*选中3:定位到父元素,选择按顺序处、指定标签处位置(每一层级共排一次序)*/
+        li:nth-child(3){
+            background: #1224ff;
+        }
+
+        /*选中父元素下的指定标签处、指定元素（每一种标签都独立排序）*/
+        p:nth-of-type(3){
+            background: #e81049;
+        }
+        
+        a：hover{
+            background: #3dec05;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>标题</h2>
+    <p>p1</p>
+    <p>p2</p>
+    <a href="">伪类（鼠标放置）</a>
+    <p>p3</p>
+    <p>p4</p>
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+    </ul>
+</body>
+</html>

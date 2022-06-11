@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表单</title>
+</head>
+<body>
+<!--表单form
+action:表单提交位置
+method：post、get提交方式
+value:默认值
+maxlength：最大长度
+size：文本框长度
+name=""可以分组
+checked:默认选中
+
+隐藏域：hidden
+只读：readonly
+禁用：disabled
+
+placehilder: 提示信息
+required：非空判断
+patter:正则表达式
+-->
+<form action="1.第一个html文件.html" method="get">
+
+    <h2>注册</h2>
+    <p>用户名：<input type="text" name="username" value="konan" maxlength="16" size="30"></p>
+    <p>密&nbsp&nbsp&nbsp&nbsp码：<input type="password" name="password" placeholder="请输入密码" required></p>
+
+    <!--单选框-->
+    <p>性别：
+        <input type="radio" value="boy" name="set0" checked>男
+        <input type="radio" value="gir" name="set0">女
+    </p>
+
+    <!--多选框-->
+    <p>爱好：
+        <input type="radio" value="dinner" name="set1">吃饭
+        <input type="radio" value="code" name="set2" checked>写代码
+        <input type="radio" value="read" name="set3">阅读
+        <input type="radio" value="sleep" name="set4" disabled>睡觉
+    </p>
+
+    <!--按钮🔘
+    input type="button" 普通按钮
+    input type="image" 图片按钮，可直接执行action跳转
+    input type="submit" 提交按钮
+    input type="reset" 重置按钮
+    -->
+    <p>
+        <input type="button" value="点击跳转" name="btn1"><br/><br/>
+        <input type="image" src="../resources/image/头像.png" hidden>
+    </p>
+
+    <!--下拉列表
+    selected:默认值
+    -->
+    <p>国家：
+        <select name="列名称">
+            <option value="china">中国🇨🇳</option>
+            <option value="us">美国🇺🇸</option>
+            <option value="yindu" selected>印度🇮🇳</option>
+            <option value="ua">英国🇬🇧</option>
+        </select>
+    </p>
+
+    <!--文本域-->
+    <p>反馈：
+        <textarea name="textarea" cols="50" rows="10">反馈：</textarea>
+    </p>
+
+    <!--文件域-->
+    <p>
+    <hr/>
+        <input type="file" name="文件">
+        <input type="button" name="upload" value="上传">
+    </p>
+
+    <!--邮箱验证-->
+    <p>邮箱：
+        <input type="email" name="email">
+    </p>
+    <!--URL验证-->
+    <p>网址：
+        <input type="url" name="url" value="https://www.baidu.com">
+    </p>
+    <!--数字验证-->
+    <p>商品数量：
+        <input type="number" name="num" max="18" min="70" step="1">
+    </p>
+    <!--滑块-->
+    <p>音量：
+        <input type="range" name="voice" max="0" min="100" step="10">
+    </p>
+    <!--搜索框-->
+    <p>搜索：
+        <input type="search" name="search" id="这里这里">
+    </p>
+
+    <!--增强鼠标可用性-->
+    <p>
+        <label for="这里这里">你点我试试！</label>
+    </p>
+
+    <!--patter-->
+    <p>身份证号👀：
+        <input type="text" name="ID number" pattern="^\d{18}$" placeholder="请输入18位身份证号！" required>
+    </p>
+
+    <p>
+        <input type="submit" value="提交表单">
+        <input type="reset" value="清空表单">
+    </p>
+</form>
+</body>
+</html>

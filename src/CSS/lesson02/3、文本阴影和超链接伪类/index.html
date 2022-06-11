@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<style>
+    /*默认字体*/
+    a{
+        color: black;
+        /*文本阴影：x轴偏移 y轴偏移 模糊度 模糊颜色*/
+        text-shadow:1px 1px 5px #6c6c6c;
+        /*font-size: 20px;*/
+    }
+    /*鼠标悬停颜色*/
+    a:hover{
+        color: orange;
+        font-size: 25px;
+    }
+    /*鼠标按住未释放*/
+    a:active{
+        color: #ff2e1b;
+        font-size: 23px;
+    }
+
+    /*已访问的链接*/
+    /*a:visited{*/
+    /*    color: #0fff0e;*/
+    /*}*/
+
+    #set1{
+
+    }
+    #set2{
+        font-size: 20px;
+        text-decoration: none;
+        text-indent:2em;
+    }
+    #set2>a{
+        text-decoration: none;
+        /*background: #bea3a4;*/
+    }
+    #set3{
+        font-size:21px;
+        font-weight: 100;
+        text-indent: 2em;
+        /*background: #bea3a4;*/
+    }
+    #set3>a{
+        text-decoration: none;
+    }
+
+</style>
+
+<body>
+<p id="set1">
+    <a href="https://item.jd.com/12445838.html" target="_blank">
+        <img src="image/a.png" alt="码出高效" width="300" height="300" title="点击购买">
+    </a>
+</p>
+<p id="set2">
+    <a href="#">码出高效：java开发手册</a>
+</p>
+<p id="set3">
+    <a href="#">作者：孤尽老师</a>
+</p>
+</body>
+</html>

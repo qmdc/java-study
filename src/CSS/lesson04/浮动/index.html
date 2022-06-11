@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>浮动</title>
+    <style>
+        .set2{
+            width: 1200px;
+            height: 300px;
+            border: 2px solid rebeccapurple;
+            margin: 20px;
+            padding: 30px;
+        }
+        p:nth-of-type(1){
+            border: 2px solid red;
+            display: block;
+            float: left;
+        }
+        p:nth-of-type(2){
+            border: 2px dashed red;
+            display: list-item;
+            list-style: none;
+            float: left;
+        }
+        p:nth-of-type(3){
+            border: 2px dashed red;
+            display: inline-block;
+            float: right;
+        }
+        #set1{
+            width: 450px;
+            height: 30px;
+            border: 1px dashed green;
+            font-size: 12px;
+            line-height: 20px;
+            margin: 30px;
+            padding: 8px;
+            display: inline;
+            float: right;
+        }
+    </style>
+</head>
+<body>
+<div class="set2">
+    <p><img src="images/1.JPG" alt="" width="140" height="250"></p>
+    <p><img src="images/2.JPG" alt="" width="220" height="400"></p>
+    <p><img src="images/3.JPG" alt="" width="300" height="450"></p>
+    <div id="set1">
+        浮动的文字问题浮动的文字问题浮动的文字问题浮动的文字问题浮动的文字问题
+    </div>
+</div>
+</body>
+</html>

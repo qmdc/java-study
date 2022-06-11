@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+</head>
+<body>
+
+<script>
+  let list=[];
+  const _flatten = arr => {
+    // 补全代码
+    for(let i=0;i<arr.length;i++){
+      if(Array.isArray(arr[i])){
+        _flatten(arr[i]);
+      }else{
+        list.push(arr[i]);
+      }
+    }
+    return list;
+    // return arr.toString().split(',').map(item=>Number(item));
+  }
+</script>
+</body>
+</html>

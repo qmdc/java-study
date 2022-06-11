@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+</head>
+<body>
+<div class='triangle'></div>
+
+<script>
+  var triangle = document.querySelector('.triangle');
+  // 补全代码
+  var str='';
+  for(let i=1;i<=3;i++){
+    for(let j=0;j<i;j++){
+      str+='*';
+    }
+    str+='<br/>';
+  }
+  triangle.innerHTML=str;
+</script>
+</body>
+</html>

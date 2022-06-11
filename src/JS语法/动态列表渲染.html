@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+</head>
+<body>
+<ul></ul>
+
+<script>
+  var people = [
+    { name: '牛油1号', id: 1, age: 20 },
+    { name: '牛油2号', id: 2, age: 21 },
+    { name: '牛油3号', id: 3, age: 19 },
+  ]
+  var ul = document.querySelector('ul');
+  // 补全代码
+  people.forEach(peo=>{
+    var li_=document.createElement('li');
+    li_.innerHTML=peo.name+peo.age;
+    ul.appendChild(li_);
+  })
+</script>
+</body>
+</html>

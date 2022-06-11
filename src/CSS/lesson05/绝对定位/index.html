@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>绝对定位</title>
+  <style>
+    div.relative {
+      position: relative;
+      width: 400px;
+      height: 200px;
+      border: 3px solid #73AD21;
+    }
+
+    div.absolute {
+      /*position: absolute; 的元素相对于最近的定位祖先元素进行定位
+      如果绝对定位的元素没有祖先，它将使用文档主体（body），并随页面滚动一起移动*/
+      position: absolute;
+      top: 80px;
+      right: 0;
+      width: 200px;
+      height: 100px;
+      border: 3px solid #73AD21;
+    }
+  </style>
+</head>
+<body>
+
+<h1>position: absolute;</h1>
+
+<p>设置 position: absolute; 的元素会相对于最近的定位祖先进行定位（而不是相对于视口进行定位，比如 fixed）：</p>
+
+<div class="relative">这个 div 元素设置 position: relative;
+  <div class="absolute">这个 div 元素设置 position: absolute;</div>
+</div>
+
+</body>
+</html>

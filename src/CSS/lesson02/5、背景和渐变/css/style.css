@@ -1,0 +1,19 @@
+div{
+    width: 1000px;
+    height: 800px;
+    border: 1px solid red;
+    background-image: url("../images/b.png") ;
+    /*默认全部平铺*/
+}
+.div1{
+    /*x轴平铺*/
+    background-repeat:repeat-x;
+}
+.div2{
+    /*y轴平铺*/
+    background-repeat: repeat-y;
+}
+.div3{
+    /*单张图片*/
+    background-repeat:no-repeat;
+}

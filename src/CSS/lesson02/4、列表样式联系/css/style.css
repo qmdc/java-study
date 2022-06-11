@@ -1,0 +1,45 @@
+.nav{
+    width: 250px;
+    height: 30px;
+}
+.title{
+    font-size: 20px;
+    color: #ea620d;
+    text-indent:3em;
+    font-family: bold,monospace;
+    height: 47px;
+    line-height: 48px;
+    background:#fffea3 url("../images/uu.png") 210px 16px no-repeat;
+}
+
+ul{
+    background: #ededf5;
+}
+
+ul li{
+    height: 30px;
+    /*
+    list_style:
+                none:去原点
+                circle:空心圆
+                decimal:数字列表
+                square:正方形
+    */
+    list-style: none;
+    background-image: url("../images/uu.png");
+    background-repeat: no-repeat;
+    background-position: 179px 3px;
+}
+
+a{
+    text-decoration: none;
+    color: #707272;
+    font-weight: 50;
+    font-family: 微软雅黑, monospace;
+    font-size: 14px;
+}
+
+a:hover{
+    color: #e8654b;
+    text-decoration: underline;
+}

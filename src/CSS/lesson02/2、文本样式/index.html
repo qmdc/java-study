@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>文本样式</title>
+    <!--
+    颜色：
+    RGB：0-F;
+    RGBA:0-255, 透明度：0-1;
+
+    text-indent: 2em;缩进2个字的位置
+    text-align: center;居中(left,right)
+
+    height:60px;块高
+    line-height: 60px;行高，和块高一样时就可以让文字居中
+
+    text-decoration:underline;下划线
+    text-decoration:line-through;中划线
+    text-decoration:overline;上划线
+    text-decoration: none;去超链接下划线
+    -->
+    <style>
+        #name{
+            color: rgba(0,255,0,0.7);
+            text-indent: 2em;
+        }
+        .set3{
+            text-align: center;
+            background: #faff96;
+            height:60px;
+            line-height: 60px;
+        }
+        .set2{
+            font-family: Thonburi,serif;
+            background: #e2ffed;
+        }
+        .i1{
+            text-decoration:underline;
+        }
+        .i2{
+            text-decoration:line-through;
+        }
+        .i3{
+            text-decoration:overline;
+        }
+        .i4{
+            text-decoration: none;
+        }
+
+        /*图片与文字居中对齐：参照物：a,b*/
+        img,span{
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+<span>假如生活欺骗了你</span>
+
+<p id="name">普希金</p>
+
+<p class="set1">
+    假如生活欺骗了你，<br/>
+    不要悲伤，不要心急！<br/>
+    忧郁的日子里须要镇静：<br/>
+    相信吧，快乐的日子将会来临！<br/>
+    心儿永远向往着未来；<br/>
+    现在却常是忧郁。<br/>
+    一切都是瞬息，一切都将会过去；<br/>
+    而那过去了的，就会成为亲切的怀恋。<br/>
+</p>
+<hr/>
+<p class="set3">一首小诗～～～</p><hr/>
+
+<p class="set2">
+    If life cheats you，<br/>
+    don't be disappointed and worried．<br/>
+    Calmness is needed in melancholy days．<br/>
+    Believe that pleasantness is coming．<br/>
+    Long for the bright future though you are unhappy．<br/>
+    All will pass by and everything will be over．<br/>
+    Past things will be pleasant memories.<br/>
+</p>
+
+<p class="i1">下划线</p>
+<p class="i2">中划线</p>
+<p class="i3">上划线</p>
+<p><a href="" class="i4">a标签🏷️</a></p>
+
+<p>
+    <span>疑似银河落九天</span>
+    <img src="image/幽冥船.png" alt="船长好！" title="幽冥船" height="165.4" width="109.8">
+    <span>飞流直下三千尺</span>
+</p>
+
+</body>
+</html>

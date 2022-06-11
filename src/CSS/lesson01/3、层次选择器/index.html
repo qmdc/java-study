@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>层次选择器测试</title>
+<!--遵循就近原则/id>class>标签-->
+    <style>
+        /*后代选择器*/
+        body p{
+            background:#3a3dff;
+        }
+
+        /*子选择器*/
+        .e3>li{
+            background: #ff840f;
+        }
+
+        /*相邻兄弟选择器*/
+        /*只有一个（向下）*/
+        #i2 +li{
+            background: #9ba8ff;
+        }
+
+        /*通用选择器*/
+        /*当前选中元素向下的所有兄弟元素*/
+        .e2~p{
+            background: #ff243a;
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+<strong>你好!</strong>
+<ul id="i1">
+    <p class="e2">#</p>
+    <p>$</p>
+    <p>%</p>
+    <li>1</li>
+    <li id="i2">2</li>
+    <li>3</li>
+        <ul class="e1">
+            <p>&</p>
+            <p><li>3.1</li></p>
+            <p><li>3.2</li></p>
+            <p><li>3.3</li></p>
+                <ul class="e3">
+                    <li>3.3.1</li>
+                </ul>
+        </ul>
+    <li>4</li>
+</ul>
+
+
+</body>
+</html>
