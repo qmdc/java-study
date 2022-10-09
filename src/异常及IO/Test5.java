@@ -13,6 +13,7 @@ public class Test5 {
             method2();
         }catch(Exception ex){
             //throw new Exception("111");
+            System.out.println("===");
             throw new Exception("111",ex);
             //throw new Exception(ex,"111");//cowuwuic
             //throw new Exception(ex);
